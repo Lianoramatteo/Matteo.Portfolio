@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Lianora — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" id="bgGlow" aria-hidden="true"></div>
+
+    <nav id="mainNav">
+        <a href="#home" class="nav-logo">M<span class="highlight">.</span>L</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-nav>Home</a></li>
+            <li><a href="#about" data-nav>About</a></li>
+            <li><a href="#services" data-nav>Services</a></li>
+            <li><a href="#skills" data-nav>Skills</a></li>
+            <li><a href="#tools" data-nav>Tools</a></li>
+            <li><a href="#projects" data-nav>Project</a></li>
+            <li><a href="#contact" data-nav>Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="banner">
+            <span class="shape shape-1"></span>
+            <span class="shape shape-2"></span>
+            <span class="shape shape-3"></span>
+        </div>
+        <div class="profile-block">
+            <button class="profile-circle" id="openProfileLightbox" aria-label="View full profile picture">
+                <img src="IMG_20260617_123956_574.jpg" alt="Matteo Profile Picture">
+                <span class="zoom-hint"><i class="fas fa-magnifying-glass"></i></span>
+            </button>
+            <h2 class="reveal" style="transition-delay:.06s">HI I'M</h2>
+            <h1 class="reveal" style="transition-delay:.12s">MATTEO R. LIANORA</h1>
+            <p class="reveal" style="transition-delay:.18s">BSIS Student | UI/UX &amp; Graphic Designer</p>
+            <a href="#contact" class="cta-btn reveal" style="transition-delay:.24s">Let's talk <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="block reveal">
+            <h2 class="section-title">About <span class="highlight">me</span></h2>
+            <div class="about-content">
+                <button class="polaroid" id="openAboutLightbox" aria-label="View full photo">
+                    <img src="1730686941903.jpg" alt="Matteo picture center">
+                    <span class="zoom-hint"><i class="fas fa-magnifying-glass"></i></span>
+                </button>
+                <div class="about-text">
+                    <p>I'm Matteo R. Lianora, a BSIS 2B student at Davao Norte State College and an aspiring UI/UX designer who creates clean and user-friendly designs using Figma and Canva.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="block reveal">
+            <h2 class="section-title">Service I <span class="highlight">offer</span></h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-pen-ruler"></i>
+                    <p>UI/UX DESIGN</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <p>GRAPHIC DESIGN</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="block reveal">
+            <h2 class="section-title">My <span class="highlight">skills</span></h2>
+            <p class="section-hint">Tap a skill to see more</p>
+            <ul class="skill-list">
+                <li>
+                    <button class="skill-card" data-skill="teamwork">
+                        <span class="skill-name">TEAMWORK AND COLLABORATION</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="skill-card" data-skill="communication">
+                        <span class="skill-name">COMMUNICATION</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="skill-card" data-skill="critical-thinking">
+                        <span class="skill-name">CRITICAL THINKING</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="skill-card" data-skill="ui-ux">
+                        <span class="skill-name">UI/UX DESIGN</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="skill-card" data-skill="system-analyst">
+                        <span class="skill-name">SYSTEM ANALYST</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </li>
+            </ul>
+        </section>
+
+        <section id="tools" class="block reveal">
+            <h2 class="section-title">Tool i <span class="highlight">use</span></h2>
+            <div class="tools-container">
+                <div class="tool">
+                    <img src="unnamed.png" alt="Figma Logo">
+                    <p>FIGMA</p>
+                </div>
+                <div class="tool">
+                    <img src="image.png" alt="Canva Logo">
+                    <p>CANVA</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="block reveal">
+            <h2 class="section-title">MY PROJECT <span class="highlight">FIGMA</span></h2>
+            <div class="project-mockup-container">
+                <video
+                    src="Screen_Recording_20260520_200107.mp4"
+                    controls
+                    playsinline
+                    preload="metadata">
+                    Your browser doesn't support embedded video.
+                </video>
+            </div>
+        </section>
+
+        <section id="contact" class="block reveal">
+            <h2 class="contact-title">CONTACT</h2>
+            <div class="contact-list">
+
+                <a href="mailto:matteollanora@gmail.com" class="contact-item-link">
+                    <div class="contact-item">
+                        <span class="icon email-icon"><i class="fas fa-envelope"></i></span>
+                        <p>matteollanora@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="tel:09301845093" class="contact-item-link">
+                    <div class="contact-item">
+                        <span class="icon phone-icon"><i class="fas fa-phone"></i></span>
+                        <p>0930-184-5093</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Lianoramatteo" target="_blank" class="contact-item-link">
+                    <div class="contact-item">
+                        <span class="icon github-icon"><i class="fab fa-github"></i></span>
+                        <p>Lianora_Matteohttps://github.com/Lianoramatteo</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/matteo-lianora-b8432a409?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-item-link">
+                    <div class="contact-item">
+                        <span class="icon linkedin-icon"><i class="fab fa-linkedin-in"></i></span>
+                        <p>Matteo Lianora</p>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/share/1HX5f4Ghgc/" target="_blank" class="contact-item-link">
+                    <div class="contact-item">
+                        <span class="icon facebook-icon"><i class="fab fa-facebook-f"></i></span>
+                        <p>Matteo Lianora</p>
+                    </div>
+                </a>
+
+            </div>
+            <p class="footer-note">Designed &amp; built by Matteo Lianora</p>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <div class="skill-modal" id="skillModal">
+        <div class="skill-modal-card">
+            <button class="skill-modal-close" id="skillModalClose" aria-label="Close">&times;</button>
+            <span class="skill-modal-icon" id="skillModalIcon"><i class="fas fa-star"></i></span>
+            <h3 id="skillModalTitle">Skill</h3>
+            <p id="skillModalDesc">Description</p>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
